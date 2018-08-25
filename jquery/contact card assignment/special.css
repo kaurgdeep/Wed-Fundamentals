@@ -1,0 +1,55 @@
+body{
+    border: 7px solid black;
+    width: 900px;
+
+}
+
+form{
+    width: 400px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+.input-description{
+    height: 80px;
+}
+.output{
+    width: 400px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align:top;
+
+}
+.dynamic-info{
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+   
+}
+.dynamic-names{
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    font-weight: bold;
+    display: block;
+    text-align: center;  
+}
+.dynamic-description{
+    height: 150px;
+    width: 300px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}

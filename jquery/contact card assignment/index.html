@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Cards</title>
+        <link rel="stylesheet" href="./special.css">
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var firstname = $(".input-firstname").val();
+                    var lastname = $(".input-lastname").val();
+                    var markup = "<div class='dynamic-names'><h1>" + firstname +" " + lastname + "</h1><p>Click here for description!</p><h2>"+$(".input-description").val() +"</h2></div>"  ;
+                    //var markup = "<div>" firstname +" "+  lastname "</div class=dynamic-description2>";
+                    $(".output").append(markup);
+                    $(".dynamic-names").children('h2').hide()
+
+                    
+                    return false;
+                });
+                $(document).on("click",".dynamic-names", function(){
+                        $(this).children('h1').hide()
+                        $(this).children('p').hide()
+                        $(this).children('h2').show()
+                    })
+
+                $(document).on("click","h2", function(){
+                    $(".dynamic-names").children('h1').show()
+                    $(".dynamic-names").children('p').show()
+                    $(".dynamic-names").children('h2').hide()                    
+                 })
+
+            })
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <label for="firstname">First Name</label>
+            <input class="input-firstname" type="text" value="GAGANDEEP">
+            <label for="lastname">Last Name</label>
+            <input class="input-lastname" type="text" value="KAUR">
+            <label for="description">Description</label>
+            <input class="input-description" type="text">
+            <button>Add User</button>
+        </form>
+        <div class="output">
+            <div class="dynamic-info">
+                <h1>GAGANDEEP KAUR</h1>
+                <p class="p-tag">click for description!</p>
+
+            </div>
+        </div>
+    </body>
+</html>

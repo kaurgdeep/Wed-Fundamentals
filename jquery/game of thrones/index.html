@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script>
+        $(document).ready(function(){
+           
+            
+            $("img").click(function(){
+                $.get("https://anapioficeandfire.com/api/houses/"+$(this).attr("id") +"/", function(res) {
+                 
+                        var html_str = "";
+                        html_str += "<h1>Name: "+res.name+"</h1>";
+                        html_str += "<h1>words: "+res.words+ "</h1>";
+                        html_str += "<h1>Title: "
+                        for(var i = 0; i < res.titles.length; i++) {
+                            if(i ==  res.titles.length-1){
+                                html_str +=  res.titles[i]
+                            }
+                            else{
+                             html_str +=  res.titles[i]+ ", " 
+                            } 
+                         }
+                          html_str += "</h1>";
+                         $(".info").html(html_str);
+            }, "json")
+            })
+         });
+
+        
+        </script>
+        <style>
+            img{
+                height: 200px;
+        
+            }
+            .info{
+                width: 700px;
+                border: 2px solid black;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./baratheon.png" id="15" >
+            <img src="./lannister.jpg" id="230" >
+            <img src="./stark.jpg" id="362">
+            <img src="./targaryen.jpg" id="378">
+        </div>
+        <h1>House Details</h1>
+        <div class="info">
+
+        </div>
+
+    </body>

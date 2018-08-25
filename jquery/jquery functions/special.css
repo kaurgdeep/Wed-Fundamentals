@@ -1,0 +1,91 @@
+.click{
+    height: 100px;
+    width: 800px;
+    background-color:#c1c1c1;
+}
+.h2-tags{
+    text-align: center;
+}
+.hide{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.show{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.toggle{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.slide-down{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.slide-up{
+    height: 100px;
+    width: 800px;
+    background-color:#c1c1c1;
+}
+.slide-toggle{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.fade-in{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.fade-out{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.add-class{
+    height: 100px;
+    width: 800px;
+    background-color:#c1c1c1;
+}
+.before{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.after{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.append{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.html{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.attr{
+    height: 100px;
+    width: 800px;
+    background-color: #c1c1c1;
+}
+.attr img{
+    width: 40px;
+}
+.val{
+    height: 100px;
+    width: 800px;
+    background-color:  #c1c1c1;
+}
+#side-down-img{
+    height: 40px;
+    width: 50px;
+} 
+

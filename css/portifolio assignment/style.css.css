@@ -1,0 +1,123 @@
+
+header{
+    
+    width: 970px;
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+}
+
+h1 {
+    display: inline-block;
+    margin-right: 390px;
+}
+h2 {
+    display: inline-block;
+
+}
+
+
+#profile-pic {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    border: 8px solid rgb(192, 192, 192);
+}
+.lamode{
+    width: 300px;
+}
+.familycontacts{
+    width: 300px;
+}
+.fiveeleven{
+    width: 300px;
+}
+.about{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    width: 480px;
+    background: rgb(228, 217, 227);
+    height: 263px;
+
+}
+
+.subtitle{
+    background-color: rgb(135, 133, 147);
+    display: block;
+    color: white;
+}
+.subtitle1{
+    background-color: rgb(135, 133, 147);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding:10px;
+    color: white;
+    
+}
+.project{
+   width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(236, 228, 235);
+    margin-left: 5px;
+    margin-right: 15px;
+    height: 553px; 
+    background: linear-gradient(rgb(240, 223, 240),rgb(220, 206, 219));
+    
+}
+
+.description {
+    height: 148px;
+    padding: 5px;
+}
+h4{
+    background-color: rgb(135, 133, 147);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding:10px;
+}
+.img{
+    padding:5px; 
+}
+
+main{
+    width: 970px;
+    padding: 20px;
+    background: radial-gradient(rgb(111,89,100),rgb(54,36,42)); /* main body background gradient*/ 
+
+}
+footer{
+  width: 970px;
+    background: #f8f8f8;
+}
+footer p img{
+    width: 20px;
+}
+footer p{
+    margin-left: 300px; 
+}
+.text4{
+     margin-left: 350px;
+     font-size: 15px;
+
+}
+.pics img{
+    width: 40px;
+}
+
+button{
+    margin-left: 100px;
+    border-radius: 5px;
+    background: rgb(64,125,97);
+    padding: 3px;
+    vertical-align: top;
+   
+}
+section{
+    margin-bottom: 20px;
+}
+.aboutp{
+    height: 55px;
+    font: 5px;
+    padding: 5px;
+}

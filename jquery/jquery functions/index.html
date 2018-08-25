@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery functins</title>
+        <link rel="stylesheet" href="./special.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("#click-botton").click(function(){
+                    $("#click-tag").hide();
+
+                });
+                $("#hide-button").click(function(){
+                    $("#hide-tag").hide();
+
+                });
+                $("#show-hide").click(function(){
+                    $(".show-tag").hide();
+                }); 
+
+                $("#show-button").click(function(){
+                    $(".show-tag").show();
+                });
+                $("#toggle-button").click(function(){
+                    $("#toggle-tag").toggle();
+                });
+                $("#slide-up-button").click(function(){
+                    $("#slide-up-tag").slideUp();
+                });
+                $("#slide-down-button").click(function(){
+                    $("#slide-up-tag").slideDown();
+                });
+                $("#slide-toggle-button").click(function(){
+                    $("#slide-toggle-tag").slideToggle();
+                });
+                $("#fade-in-button").click(function(){
+                    $("#fade-in-tag").fadeIn();
+                });
+                $("#fade-out-button").click(function(){
+                    $("#fade-in-tag").fadeOut();
+                });
+                $("#before-button").click(function(){
+                    $("#before-tag").before("hello");
+                });
+                $("#after-button").click(function(){
+                    $("#before-tag").after("hiiiiii");
+                });
+                $("#append-button").click(function(){
+                    $("#append-tag").append("hello world!");
+                });
+                $("#html-button").click(function(){
+                    $("#html-tag").html("hello hello hello");
+                });
+                $("#attr-button").click(function(){
+                    $("#attr-img").attr("src","./RUBY.png");
+                });
+                $("#val-button").click(function(){
+                    $("input:text").val("hello");
+                });    
+            });
+
+        </script>
+        
+    </head>
+    <body>
+        <div class="click">
+            <h2 class="h2-tags">click</h2>
+            <button id="click-botton">click</button>
+            <p id="click-tag">click the button to hide</p>
+        </div>
+        <div class="hide">
+            <h2 class="h2-tags">hide</h2>
+            <button id="hide-button">hide</button>
+            <p id="hide-tag">click button to hide something!</p>
+        </div>
+        <div class="show">
+            <h2 class="h2-tags">show</h2>
+            <button id="show-button">show</button>
+            <button id="show-hide">hide</button>
+            <p class="show-tag">click button to watch something</p>
+        </div>
+        <div class="toggle">
+            <h2 class="h2-tags">Toggle</h2>
+            <button id="toggle-button">toggle</button>
+            <p id="toggle-tag">click button to see toggle</p>
+        </div>
+        <div class="slide-down">
+            <h2 class="h2-tags">Slide-Down</h2>
+            <button id="slide-down-button">slide-dowm</button>
+        </div>
+        <div class="slide-up">
+            <h2 class="h2-tags">slide-up</h2>
+            <button id="slide-up-button">slide-up</button>
+            <p id="slide-up-tag">click button to slide-up.</p>
+            
+            
+        </div>
+        <div class="slide-toggle">
+            <h2 class="h2-tags">Slide-Toggle</h2>
+            <button id="slide-toggle-button">slide-toogle</button>
+            <p id="slide-toggle-tag">click button to toogle</p>
+        </div>
+        <div class="fade-in">
+            <h2 class="h2-tags">Fade-In</h2>
+            <button id="fade-in-button">fade-in</button>
+            <p id="fade-in-tag">click button to fade-in</p>
+        </div>
+        <div class="fade-out">
+            <h2 class="h2-tags">Fade-Out</h2>
+            <button id="fade-out-button">fade-out</button>
+        </div>
+        <div class="add-class">
+            <h2 class="h2-tags">Add-Class</h2>
+            <button>add-class</button>
+            <p>click button to add-class</p>
+        </div>
+        <div class="before">
+            <h2 class="h2-tags">Before</h2>
+            <button id="before-button">before</button>
+            <p id="before-tag">click button to slide-dowm</p>
+        </div>
+        <div class="after">
+            <h2 class="h2-tags">After</h2>
+            <button id="after-button">after</button>
+            <p id="after-tag">click button to check after property</p>
+        </div>
+        <div class="append">
+            <h2 class="h2-tags">Append</h2>
+            <button id="append-button">append</button>
+            <p id="append-tag">click button to check after property</p>
+        </div>
+        <div class="html">
+            <h2 class="h2-tags">HTML</h2>
+            <button id="html-button">html</button>
+            <p id="html-tag">click button to check HTML property</p>
+        </div>
+        <div class="attr">
+            <h2 class="h2-tags">ATTR</h2>
+            <button id="attr-button">attr</button>
+            <img id="attr-img" src="">
+       </div>
+        <div class="val">
+            <h2 class="h2-tags">Val</h2>
+            <button id="val-button">val</button>
+            <input type="text">
+        </div>
+
+    </body>
+</html>

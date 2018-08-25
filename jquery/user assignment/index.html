@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+        <link rel="stylesheet" href="./special.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script>
+           $(document).ready(function(){
+               $(".add-user").click(function(){
+                   var firstname = $(".input-firstname").val();
+                   var lastname = $(".input-lastname").val();
+                   var email = $(".input-email").val();
+                   var contact = $(".input-contact").val();
+                   var markup = "<tr><td>" + firstname + "</td><td>" + lastname + "</td><td>" + email + "</td><td>" + contact +"</td><tr>";
+                   $("table").append(markup);
+                   return false;
+
+               });
+
+           });
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="td-firstname">First Name</td>
+                <td class="td-lastname">Last Name</td>
+                <td class="td-email">Email Address</td>
+                <td class="td-contact">Contact#</td>
+            </tr>
+        </table>
+        <h1>Add User</h1>
+        <form>
+           <label for="first name">First Name:</label>
+           <input class="input-firstname" type="text">
+           <label for="Last Name">Last Name:</label>
+           <input class="input-lastname"type="text">
+           <label for="Email Address">Email Address:</label>
+           <input class="input-email" type="text">
+           <label for="Contact no:">Contact no::</label>
+           <input class="input-contact" type="text">
+           <label for="submit"></label>
+           <input class="add-user" type="submit">
+        </form>
+       
+    </body>
+</html>

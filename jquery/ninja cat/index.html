@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ninja cat</title>
+        <link rel="stylesheet" href="./special.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        
+        <script>
+            $(document).ready(function(){
+               // $('#cat0').click(function(){
+                   // $(this).attr("src","img/ninja0.png");
+                //});
+                //$('#cat1').click(function(){
+                  //  $(this).attr("src","img/ninja1.png");
+                //});
+                //$('#ninja2').click(function(){
+                  //  $(this).attr("src","img/cat2.png");
+                //});
+                //$('#ninja3').click(function(){
+                  //  $(this).attr("src","img/cat3.png");
+                //});
+                //$('#ninja4').click(function(){
+                  //  $(this).attr("src","img/cat4.png");
+                //});
+                $("img").click(function(){
+                    var currentsrc = $(this).attr('src')
+                    var currentother = $(this).attr("other")
+                    $(this).attr("src",currentother);
+                    $(this).attr("other",currentsrc);
+                });
+                
+                
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <img src="img/cat0.png" other="img/ninja0.png">
+            <img src="img/cat1.png" other="img/ninja1.png">
+            <img src="img/ninja2.png" other="img/cat3.png">
+            <img src="img/ninja3.png" other="img/cat4.png">
+            <img src="img/ninja4.png" other="img/cat4.png">
+        </div>    
+
+
+    </body>
+</html>

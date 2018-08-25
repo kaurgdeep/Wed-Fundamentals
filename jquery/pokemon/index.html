@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>pokemon</title>
+        <link rel="stylesheet" href="./special.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script>
+        $(document).ready(function(){
+            for(var i = 1; i <= 151; i++){
+                $("body").append( "<img src='http://pokeapi.co/media/img/"+ i +".png'>")
+             }
+
+            
+            
+            $.get("https://pokeapi.co/api/v2/pokemon/2/", function(res) {
+                console.log(res);
+                        //  var html_str = "";
+                        //  html_str += "<h4>Types</h4>";
+                        //  html_str += "<ul>"; 
+                        //  for(var i = 0; i < res.types.length; i++) {
+                            //  html_str += "<li>" + res.types[i].name + "</li>";
+                        //  }
+                        //  html_str += "</ul>";
+                        //  $(".info").html(html_str);
+            }, "json")
+            });
+
+        
+        </script>
+    </head>
+    <body>
+        <div class="info">
+
+        </div>
+
+    </body>

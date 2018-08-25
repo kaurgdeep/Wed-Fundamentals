@@ -1,0 +1,25 @@
+
+C:\Users\gagandeep\dojoassingments>dir/b /s
+C:\Users\gagandeep\dojoassingments\ios
+C:\Users\gagandeep\dojoassingments\MEAN
+C:\Users\gagandeep\dojoassingments\netcore
+C:\Users\gagandeep\dojoassingments\python
+C:\Users\gagandeep\dojoassingments\Ruby
+C:\Users\gagandeep\dojoassingments\webfundamentals
+C:\Users\gagandeep\dojoassingments\ios\about.text
+C:\Users\gagandeep\dojoassingments\MEAN\about.text
+C:\Users\gagandeep\dojoassingments\netcore\about.text
+C:\Users\gagandeep\dojoassingments\python\about.text
+C:\Users\gagandeep\dojoassingments\Ruby\about.text
+C:\Users\gagandeep\dojoassingments\webfundamentals\about.text
+C:\Users\gagandeep\dojoassingments\webfundamentals\css
+C:\Users\gagandeep\dojoassingments\webfundamentals\git
+C:\Users\gagandeep\dojoassingments\webfundamentals\HTML
+C:\Users\gagandeep\dojoassingments\webfundamentals\javascript
+C:\Users\gagandeep\dojoassingments\webfundamentals\css\about.text
+C:\Users\gagandeep\dojoassingments\webfundamentals\git\about.text
+C:\Users\gagandeep\dojoassingments\webfundamentals\git\cd
+C:\Users\gagandeep\dojoassingments\webfundamentals\HTML\about.text
+C:\Users\gagandeep\dojoassingments\webfundamentals\HTML\indentation.html
+C:\Users\gagandeep\dojoassingments\webfundamentals\javascript\about.text
+C:\Users\gagandeep\dojoassingments
