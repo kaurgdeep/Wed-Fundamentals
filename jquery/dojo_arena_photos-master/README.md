@@ -1,9 +1,4 @@
 # Dojo Arena
-#### Clone this repo to your Desktop
-
-##### In this group activity, you and your partner will be creating the opening sequences of a Street Fighter-like game. The wireframes and images are provided in this repo. It is not required to use the same images. Have fun!
-
-
 
 ##### Assignment Instructions:
 
