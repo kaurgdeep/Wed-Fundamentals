@@ -1,39 +1,40 @@
 <html>
-    <head>
-        <title>weather forcast</title>
-        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-        <script>
-        $(document).ready(function(){
 
-            $('form').submit(function() {
-                $(".submit").click(function(){
-                    $.get("http://api.openweathermap.org/data/2.5/weather?q="+ $("input").val()+"&APPID=4719ae6550bf6e643219e00d7ab1c054", function(res) {
+<head>
+    <title>weather forcast</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function () {
+
+            $('form').submit(function () {
+                $(".submit").click(function () {
+                    $.get("http://api.openweathermap.org/data/2.5/weather?q=" + $("input").val() + "&APPID=4719ae6550bf6e643219e00d7ab1c054", function (res) {
                         console.log(res);
-                        var html_str= "";
-                        html_str += "<h1>" +res.name+ "</h>";
-                        html_str += "<h1>temprature: "+ Math.floor(res.main.temp * 1.8 - 459.67)+ "</h>";
+                        var html_str = "";
+                        html_str += "<h1>" + res.name + "</h>";
+                        html_str += "<h1>temprature: " + Math.floor(res.main.temp * 1.8 - 459.67) + "</h>";
                         $("#display").html(html_str);
-                        
+
                     }, "json");
 
-                 
+
                 })
-             // your code here (build up your url)
-             // don't forget to return false so the page doesn't refresh
-            return false;
+                // your code here (build up your url)
+                // don't forget to return false so the page doesn't refresh
+                return false;
             });
         });
-        </script>
-    </head>
-    <style>
-        input{
-            height: 40px;
-            width: 200px;
-            border: 3px solid black;
-        }
-        
-    </style>
-    <body>
+    </script>
+</head>
+<style>
+    input {
+        height: 40px;
+        width: 200px;
+        border: 3px solid black;
+    }
+</style>
+
+<body>
     <form action="">
         <input type="text">
         <button class="submit" type="submit">SEARCH WEATHER</button>
@@ -42,7 +43,8 @@
     <div id="display">
 
     </div>
-    
-        
-    </body>
+
+
+</body>
+
 </html>
